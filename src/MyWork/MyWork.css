@@ -1,0 +1,160 @@
+#workTitle{
+    font-size: 40px;
+    color: aqua;
+}
+
+#myWork{
+    height: 500px;
+}
+#workDesc{
+    font-size: 25px;
+    padding-left: 105px;
+}
+
+#projectImages{
+    display: flex;
+    flex-direction: row;
+    padding-left: 9%;
+    padding-top: 5%;
+}
+#project1{
+    height: 200px;
+    width: 300px;
+    /* float: left;
+    padding-top: 40px;
+    padding-left: 140px; */
+}
+#project2{
+    height: 200px;
+    width: 300px;
+    /* position: relative;
+    right: 80px;
+    padding-top: 40px; */
+}
+
+#project3{
+    height: 200px;
+    width: 300px;
+    /* position: relative;
+    padding-top: 40px; */
+    /* opacity: 1; */
+}
+
+#overlay3{
+    visibility: hidden;
+    position: relative;
+    transform: translateY(0%);
+    transition-duration: 0.2s;
+    background: rgba(0, 0, 0, 0.7);
+    /* left: 109px; */
+    width: 300px;
+    height: 80px;
+    top: -60%;
+}
+#overlay2{
+    visibility: hidden;
+    position: relative;
+    transform: translateY(0%);
+    transition-duration: 0.2s;
+    background: rgba(0, 0, 0, 0.7);
+    /* left: 109px; */
+    width: 300px;
+    height: 80px;
+    top: -60%;
+}
+#overlay1{
+    visibility: hidden;
+    position: relative;
+    transform: translateY(0%);
+    transition-duration: 0.2s;
+    background: rgba(0, 0, 0, 0.7);
+    /* left: 109px; */
+    width: 300px;
+    height: 80px;
+    top: -60%;
+}
+
+#work3 {
+    /* position: relative;
+    top: -429px;
+    padding-left: 835px; */
+    height: 200px;
+    width: 300px;
+    flex: 1;
+}
+#image3:hover #overlay3{
+    visibility: visible;
+    transform: translateY(-50%);
+    color: aqua;
+    transition-duration: 0.2s;
+    height: 200px;
+}
+
+#image3:hover #text3{
+    visibility: visible;
+    
+}
+#text3{
+    padding-top: 85px;
+    visibility: hidden;
+}
+
+#image2:hover #text3{
+    visibility: visible;
+    
+}
+/* #text2{
+    padding-top: 85px;
+    visibility: hidden;
+} */
+#image1:hover #text3{
+    visibility: visible;
+}
+/* #text1{
+    padding-top: 85px;
+    visibility: hidden;
+} */
+#work2{
+    /* position: relative;
+    right: 120px;
+    top: -85px; */
+    height: 200px;
+    width: 300px;
+    flex: 1;
+}
+
+#work1{
+    height: 200px;
+    width: 300px;
+    flex: 1;
+}
+#image2:hover #overlay2{
+    visibility: visible;
+    transform: translateY(-50%);
+    color: aqua;
+    transition-duration: 0.2s;
+    height: 200px;
+}
+
+#image1:hover #overlay1{
+    visibility: visible;
+    transform: translateY(-50%);
+    color: aqua;
+    transition-duration: 0.2s;
+    height: 200px;
+}
+#image1{
+    height: 200px;
+    width: 300px;
+    cursor: pointer;
+}
+#image2{
+    height: 200px;
+    width: 300px;
+    cursor: pointer;
+}
+#image3{
+    height: 200px;
+    width: 300px;
+    cursor: pointer;
+}

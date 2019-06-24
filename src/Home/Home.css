@@ -1,0 +1,15 @@
+#backGroundImage{
+    height: 660px;
+    width: 100%;
+}
+
+#intro{
+    position: relative;
+    bottom: 75%;
+    font-size: 400%;
+    color: white;
+}
+
+#home{
+    height: 660px;
+}
