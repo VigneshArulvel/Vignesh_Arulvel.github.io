@@ -1,0 +1,192 @@
+.title{
+  visibility: hidden;    
+}
+
+.titleAnimation {
+    font-size: 40px;
+    color: aqua;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+    animation-duration: 3s;
+}    
+
+#image {
+    height: 265px;
+    float: left;
+    padding-left: 15%;
+    border-radius: 50%;
+}
+
+#about1{
+    position: relative;
+    padding-top: 285px;
+    padding-left: 10%;
+    padding-right: 5%;
+    font-size: 20px;
+    text-align: left;
+}
+
+#language{
+    font-size: 15px;
+    float: left;
+}
+.progressHead{
+  visibility: hidden;
+}
+
+.progressHeadAnimation{
+  padding-left: 5%;
+  padding-top: 10%;
+  padding-right: 5%;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+  animation-duration: 3s;
+}
+#percentage{
+    position: absolute;
+    padding-left: 70%;
+    float: right;
+}
+#progressBar{
+    width: 20px;
+    height: 100px;
+    margin: 100px;
+}
+.react-flexible-progressbar{
+    width: 100%;
+}
+
+.react-flexible-progressbar .rf-progressbar {
+    height: 100px;
+}
+.react-flexible-progressbar .rf-progress-txt{
+    visibility: hidden;
+    height: 0px;
+    margin-top: 0px;
+}
+
+#divContent{
+  display: flex;
+  flex-direction: column;
+}
+
+.imageContent{
+  visibility: hidden;
+}
+
+.imageContentAnimation{
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-duration: 3s;
+}
+
+#about {
+    /* height: 660px; */
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 0%; */
+  }
+
+  /* for desktops */
+@media only screen and (min-width: 768px) {
+  #about {
+    height: 660px;
+  }
+  #divContent{
+    display: flex;
+    flex-direction: row;
+  }
+
+  #progressBar{
+    width: 20px;
+    height: 100px;
+    margin: 100px;
+  }
+
+  .react-flexible-progressbar{
+    width: 500px;
+  }
+
+  #percentage{
+    position: relative;
+    padding-left: 34%;
+    float: right;
+  }
+  
+  .progressHead{
+    visibility: hidden;
+    padding-left: 10%;
+    padding-top: 0%;
+  }
+
+  .progressHeadAnimation{
+    padding-left: 10%;
+    padding-top: 0%;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+    animation-duration: 3s;
+  }
+
+  #about1{
+    position: absolute;
+    padding-top: 285px;
+    padding-left: 72px;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  #image {
+    height: 265px;
+    float: left;
+    padding-left: 20%;
+    border-radius: 50%;
+  }
+  .title{
+    font-size: 40px;
+    color: aqua;
+    visibility: hidden;
+  }
+
+  .titleAnimation {
+      font-size: 40px;
+      color: aqua;
+      animation-fill-mode: both;
+      animation-name: fadeInDown;
+      animation-duration: 3s;
+  }
+
+  .imageContent{
+    visibility: hidden;
+  }
+  
+  .imageContentAnimation{
+    width: 50%;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+    animation-duration: 3s;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+      opacity:0;
+      transform: translatey(-100px);
+  }
+  to {
+      opacity:1;
+      transform: translatey(0px);
+  }
+
+  
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity:0;
+      transform: translatey(100px);
+  }
+  to {
+      opacity:1;
+      transform: translatey(0px);
+  }
+}

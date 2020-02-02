@@ -1,0 +1,100 @@
+.contact{
+    height: 660px;
+    padding-bottom: 5%;
+    visibility: hidden;
+}
+
+.contactAnimation{
+    height: 660px;
+    padding-bottom: 5%;
+    animation-fill-mode: both;
+    animation-name: bounceIn;
+    animation-duration: 3s;
+}
+
+#contactTitle{
+    font-family: auto;
+    font-size: 275%;
+    color: aqua;
+}
+
+#contactDesc{
+    font-family: auto;
+    font-size: 200%;
+    color: aqua;
+}
+
+#contactForm{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20%;
+    justify-content: space-between;
+    padding-right: 20%;
+    padding-bottom: 1.5%;
+}
+
+#contactName{
+    height: 40px;
+    width: 45%;
+    /* border-style: solid; */
+}
+
+#contactEmail{
+    height: 40px;
+    width: 45%;
+    /* border-style: solid; */
+}
+
+#contactNumber{
+    height: 40px;
+    width: 45%;
+    /* border-style: solid; */
+}
+
+#contactLastName{
+    height: 40px;
+    width: 45%;
+    /* border-style: solid; */
+}
+
+#contactNumber{
+    height: 40px;
+    width: 45%;
+    /* border-style: solid; */
+}
+
+#contactMessage{
+    height: 80px;
+    width: 100%;
+    /* border-style: solid; */
+}
+
+#contactButton{
+    color: #fff;
+    background-color: #2b90d9;
+    border-color: #2b90d9;
+    cursor: pointer;
+    border: none;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+@keyframes bounceIn {
+    0% {
+       opacity: 0;
+       transform: scale(.3);
+    }
+    50% {
+       opacity: 1; 
+       transform: scale(1.05);
+    }
+    70% {
+       transform: scale(.9);
+    }
+    100% {
+       transform: scale(1);
+    }
+ }

@@ -1,0 +1,101 @@
+#backGroundImage{
+    height: 660px;
+    width: 100%;
+}
+
+#intro{
+    position: relative;
+    bottom: 65%;
+    font-size: 300%;
+    color: white;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+    animation-duration: 3s;
+}
+
+#subTitle{
+    font-size: 140%;
+    position: relative;
+    bottom: 60%;
+    color: white;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+    animation-duration: 3s;
+}
+
+#Logo{
+    height: 165px;
+    position: absolute;
+    margin-top: 25%;
+    margin-left: -75%;
+    z-index: 1;
+    display: inline;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+    animation-duration: 3s;
+}
+
+#home{
+    height: 660px;
+    width: 100%;
+}
+
+/* for desktops */
+@media only screen and (min-width: 768px) {
+    #intro{
+        position: relative;
+        bottom: 60%;
+        font-size: 400%;
+        color: white;
+        animation-fill-mode: both;
+        animation-name: fadeInUp;
+        animation-duration: 3s;
+    }
+
+    #Logo{
+        height: 165px;
+        position: absolute;
+        margin-top: 10%;
+        margin-left: -59%;
+        z-index: 1;
+        display: inline;
+        animation-fill-mode: both;
+        animation-name: fadeInDown;
+        animation-duration: 3s;
+    }
+
+    #subTitle{
+        font-size: 150%;
+        position: relative;
+        bottom: 50%;
+        color: white;
+        animation-fill-mode: both;
+        animation-name: fadeInUp;
+        animation-duration: 3s;
+    }
+}
+
+
+@keyframes fadeInDown {
+    from {
+        opacity:0;
+        transform: translatey(-100px);
+    }
+    to {
+        opacity:1;
+        transform: translatey(0px);
+    }
+
+    
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity:0;
+        transform: translatey(100px);
+    }
+    to {
+        opacity:1;
+        transform: translatey(0px);
+    }
+}    

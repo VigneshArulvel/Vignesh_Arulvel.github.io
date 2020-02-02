@@ -1,0 +1,268 @@
+.workTitle{
+    font-size: 40px;
+    color: aqua;
+    visibility: hidden;
+}
+
+.workTitleAnimation{
+    font-size: 40px;
+    color: aqua;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+    animation-duration: 3s;
+}
+
+.workDesc{
+    font-size: 25px;
+    padding-left: 1%;
+    visibility: hidden;
+}
+
+.workDescAnimation{
+    font-size: 25px;
+    padding-left: 1%;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+    animation-duration: 3s;
+}
+
+.projectImages{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 9%;
+    padding-top: 5%;
+    visibility: hidden;
+}
+
+.projectImagesAnimation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 9%;
+    padding-top: 5%;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+    animation-duration: 3s;
+}
+
+#project1{
+    height: 200px;
+    width: 300px;
+    /* float: left;
+    padding-top: 40px;
+    padding-left: 140px; */
+}
+#project2{
+    height: 200px;
+    width: 300px;
+    /* position: relative;
+    right: 80px;
+    padding-top: 40px; */
+}
+
+#project3{
+    height: 200px;
+    width: 300px;
+    /* position: relative;
+    padding-top: 40px; */
+    /* opacity: 1; */
+}
+
+#overlay3{
+    visibility: hidden;
+    position: relative;
+    transform: translateY(0%);
+    transition-duration: 0.2s;
+    background: rgba(0, 0, 0, 0.7);
+    /* left: 109px; */
+    width: 300px;
+    height: 80px;
+    top: -60%;
+}
+#overlay2{
+    visibility: hidden;
+    position: relative;
+    transform: translateY(0%);
+    transition-duration: 0.2s;
+    background: rgba(0, 0, 0, 0.7);
+    /* left: 109px; */
+    width: 300px;
+    height: 80px;
+    top: -60%;
+}
+#overlay1{
+    visibility: hidden;
+    position: relative;
+    transform: translateY(0%);
+    transition-duration: 0.2s;
+    background: rgba(0, 0, 0, 0.7);
+    /* left: 109px; */
+    width: 300px;
+    height: 80px;
+    top: -60%;
+}
+
+#work3 {
+    /* position: relative;
+    top: -429px;
+    padding-left: 835px; */
+    height: 200px;
+    width: 300px;
+    flex: 1;
+    padding-top: 5%
+}
+#image3:hover #overlay3{
+    visibility: visible;
+    transform: translateY(-50%);
+    color: aqua;
+    transition-duration: 0.2s;
+    height: 200px;
+}
+
+#image3:hover #text3{
+    visibility: visible;
+    
+}
+#text3{
+    padding-top: 85px;
+    visibility: hidden;
+}
+
+#image2:hover #text3{
+    visibility: visible;
+    
+}
+/* #text2{
+    padding-top: 85px;
+    visibility: hidden;
+} */
+#image1:hover #text3{
+    visibility: visible;
+}
+/* #text1{
+    padding-top: 85px;
+    visibility: hidden;
+} */
+#work2{
+    /* position: relative;
+    right: 120px;
+    top: -85px; */
+    height: 200px;
+    width: 300px;
+    padding-top: 5%;
+    flex: 1;
+}
+
+#work1{
+    height: 200px;
+    width: 300px;
+    padding-top: 5%;
+    flex: 1;
+}
+#image2:hover #overlay2{
+    visibility: visible;
+    transform: translateY(-50%);
+    color: aqua;
+    transition-duration: 0.2s;
+    height: 200px;
+}
+
+#image1:hover #overlay1{
+    visibility: visible;
+    transform: translateY(-50%);
+    color: aqua;
+    transition-duration: 0.2s;
+    height: 200px;
+}
+#image1{
+    height: 200px;
+    width: 300px;
+    cursor: pointer;
+}
+#image2{
+    height: 200px;
+    width: 300px;
+    cursor: pointer;
+}
+#image3{
+    height: 200px;
+    width: 300px;
+    cursor: pointer;
+}
+
+/* for desktops */
+@media only screen and (min-width: 768px) {
+    .workDesc{
+        font-size: 25px;
+        padding-left: 105px;
+        visibility: hidden;
+    }   
+
+    .workDescAnimation{
+        font-size: 25px;
+        padding-left: 105px;
+        animation-fill-mode: both;
+        animation-name: fadeInDown;
+        animation-duration: 3s;
+    }
+    
+    .projectImages{
+        display: flex;
+        flex-direction: row;
+        padding-left: 9%;
+        padding-top: 5%;
+        visibility: hidden;
+    }
+
+    .projectImagesAnimation{
+        display: flex;
+        flex-direction: row;
+        padding-left: 9%;
+        padding-top: 5%;
+        animation-fill-mode: both;
+        animation-name: fadeInUp;
+        animation-duration: 3s;
+    }
+
+    #myWork{
+        height: 500px;
+    }
+
+    #work1{
+        padding-top: 0%;
+    }
+
+    #work2{
+        padding-top: 0%;
+    }
+
+    #work3{
+        padding-top: 0%;
+    }
+}
+
+
+@keyframes fadeInDown {
+    from {
+        opacity:0;
+        transform: translatey(-100px);
+    }
+    to {
+        opacity:1;
+        transform: translatey(0px);
+    }
+  
+    
+  }
+  
+  @keyframes fadeInUp {
+    from {
+        opacity:0;
+        transform: translatey(100px);
+    }
+    to {
+        opacity:1;
+        transform: translatey(0px);
+    }
+  }
